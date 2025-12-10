@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webinar - MatchaKU</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo MatchaKU" />
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="tentang.html">Tentang Kami</a></li>
+                <li><a href="produk.html">Produk</a></li>
+                <li><a href="galeri.html">Galeri</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+                <li><a href="webinar.html">Webinar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h2>Pendaftaran Webinar Promosi</h2>
+        <p>Daftarkan diri Anda untuk mendapatkan info promosi terbaru!</p>
+
+        <form id="formWebinar" action="#" method="post" novalidate>
+            <label for="namaPeserta">Nama Lengkap:</label><br>
+            <input type="text" id="namaPeserta" name="namaPeserta" placeholder="Minimal 3 karakter" />
+            <span class="error" id="errNamaPeserta"></span><br><br>
+            
+            <label for="emailPeserta">Email:</label><br>
+            <input type="email" id="emailPeserta" name="emailPeserta" placeholder="example@email.com" />
+            <span class="error" id="errEmailPeserta"></span><br><br>
+
+            <label for="noHp">No. HP:</label><br>
+            <input type="text" id="noHp" name="noHp" placeholder="Hanya angka" />
+            <span class="error" id="errNoHp"></span><br><br>
+            
+            <label for="topikWebinar">Pilihan Topik Webinar:</label><br>
+            <select id="topikWebinar" name="topikWebinar">
+                <option value="">-- Pilih Topik --</option>
+                <option value="basic">Pengenalan Kopi Dasar</option>
+                <option value="bisnis">Strategi Bisnis UMKM</option>
+                <option value="roasting">Teknik Roasting Modern</option>
+            </select>
+            <span class="error" id="errTopikWebinar"></span><br><br>
+            
+            <input type="checkbox" id="syarat" name="syarat" value="ya">
+            <label for="syarat">Saya menyetujui syarat & ketentuan</label><br>
+            <span class="error" id="errSyarat"></span><br><br>
+            
+            <button type="submit">Daftar Sekarang</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 MatchaKU. Semua hak dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

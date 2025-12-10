@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produk - MatchaKU</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo MatchaKU" />
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="tentang.html">Tentang Kami</a></li>
+                <li><a href="produk.html" >Produk</a></li>
+                <li><a href="galeri.html">Galeri</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+                <li><a href="webinar.html">Webinar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h2>Produk Unggulan Kami</h2>
+        <p>Berikut daftar produk MatchaKU yang kami sediakan:</p>
+
+        <table border="1" cellspacing="0" cellpadding="8">
+            <thead>
+                <tr>
+                    <th>Produk</th>
+                    <th>Ukuran</th>
+                    <th>Harga</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Matcha Latte</td>
+                    <td>250g</td>
+                    <td>Rp 45.000</td>
+                </tr>
+                <tr>
+                    <td>Matcha Original</td>
+                    <td>250g</td>
+                    <td>Rp 38.000</td>
+                </tr>
+                <tr>
+                    <td>Matcha Caramel</td>
+                    <td>250g</td>
+                    <td>Rp 42.000</td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="table-note">
+                        Semua harga sudah termasuk PPN
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="card">
+            <h3>Profil Produk</h3>
+            <img src="images/produk-1.png" alt="Kemasan MatchaKU" />
+            <p>Matcha ini memiliki manfaat untuk meningkatkan imunitas tubuh,dan memiliki cita rasa segar dan aroma khas.</p>
+
+            <h3>Rating Produk: <span id="hasil-rating"></span></h3>
+            <script>
+                let rating = 4;
+
+                if (rating >= 4.5) {
+                    document.getElementById("hasil-rating").textContent = "★★★★★ Sangat Disarankan";
+                } else if (rating >= 3) {
+                    document.getElementById("hasil-rating").textContent = "★★★ Rekomendasi Biasa";
+                } else {
+                    document.getElementById("hasil-rating").textContent = "★ Tidak Direkomendasikan";
+                } 
+            </script>
+        </div>
+
+
+
+
+        <h3>Dengarkan Cerita Kami</h3>
+        <audio controls>
+            <source src="audio/cerita-umkm.mp3" type="audio/mpeg">
+            Audio tidak tersedia di browser Anda.
+        </audio>
+        <hr>
+
+        <h3>Rating Produk: <span id="hasil-rating"></span></h3>
+
+        <h3>Layanan Unggulan:</h3>
+        <ul id="layanan-list"></ul>
+
+        <h3>Form Pemesanan</h3>
+        <form id="formPesan">
+            <input type="text" id="namaProduk" placeholder="Nama Produk" />
+            <input type="number" id="jumlah" placeholder="Jumlah" />
+            <button type="submit">Pesan</button>
+        </form>
+        <hr>
+
+        <h3>Daftar Wishlist Produk</h3>
+        <form id="formWishlist">
+            <input type="text" id="produkInput" placeholder="Nama produk..." />
+            <p>Preview: <span id="previewProduk"></span></p>
+            <button type="button" id="tambahBtn">Tambah Produk</button>
+        </form>
+
+        <ul id="daftarProduk"></ul>
+
+        <hr />
+
+        <label for="temaSelect">Pilih Tema Warna: </label>
+        <select id="temaSelect">
+            <option value="white">Putih</option>
+            <option value="lightblue">Biru Muda</option>
+            <option value="lightyellow">Kuning Muda</option>
+        </select>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 MatchaKU</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

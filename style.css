@@ -1,0 +1,265 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fefefe;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #532a10;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav {
+    background-color: #105311;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #eee;
+}
+
+.nav-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 100px;
+    width: auto;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-grow: 0.75;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu li {
+    margin-right: 20px;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 4px;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s ease;
+}
+
+.nav-menu li a:hover,
+.nav-menu li a.active {
+    color: #de9e4c;
+    border-bottom: 2px solid #de9e4c;
+}
+
+.hero {
+    background: #e9e1cf;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+}
+
+.keunggulan, .testimoni {
+    padding: 40px 0;
+}
+
+.fitur-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.fitur-list li {
+    margin-bottom: 10px;
+    background: #e8ebee;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.testimoni-card {
+    background-color: #fff;
+    padding: 20px;
+    border-left: 5px solid #de9e4c;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #eee;
+}
+
+.table-note {
+    text-align: center;
+    background-color: #eee;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form input[type="tel"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+form button[type="submit"],
+form button[type="button"] {
+    background-color: #3d6830;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background-color: #254a28;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card {
+    flex: 1 1 250px;
+    max-width: 300px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    margin: 20px auto;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin: -10px auto 10px auto;
+    border-radius: 10px 10px 0 0;
+    box-shadow: none;
+}
+
+.galeri {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.error {
+    color: red;
+    font-size: 0.8rem;
+    display: block;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.hover-scale {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    border: 2px solid #de9e4c !important;
+    cursor: pointer;
+}
+
+.caption-nama {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+footer {
+    background-color: #375d2f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .galeri {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        max-width: 90%;
+    }
+    .nav-container {
+        flex-direction: column;
+    }
+    .nav-menu {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        width: 100%;
+    }
+}
